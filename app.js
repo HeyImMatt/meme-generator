@@ -21,6 +21,7 @@ function createSpicyMeme(url, topText, bottomText) {
   const meme = document.createElement('div');
   const topTextArea = document.createElement('span');
   const bottomTextArea = document.createElement('span');
+  const deleteButton = document.createElement('button')
 
   meme.className = 'meme';
   meme.style.backgroundImage = `url(${url})`;
@@ -28,7 +29,9 @@ function createSpicyMeme(url, topText, bottomText) {
   topTextArea.innerText = topText;
   bottomTextArea.className = 'bottom-text';
   bottomTextArea.innerText = bottomText;
+  deleteButton.classList = 'btn btn-danger';
+  deleteButton.innerText = 'Delete Meme';
 
   meme.append(topTextArea, bottomTextArea)
-  generatedMemesDiv.append(meme);
+  generatedMemesDiv.append(meme, deleteButton);
 }
