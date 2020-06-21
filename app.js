@@ -1,11 +1,11 @@
 const form = document.querySelector('#create-meme-form');
-const imageUrlField = document.querySelector('#image-link');
-const topTextField = document.querySelector('#top-text');
-const bottomTextField = document.querySelector('#bottom-text');
 const generatedMemesDiv = document.querySelector('#generated-memes');
 
 form.onsubmit = function (event) {
   event.preventDefault();
+  const imageUrlField = document.querySelector('#image-link');
+  const topTextField = document.querySelector('#top-text');
+  const bottomTextField = document.querySelector('#bottom-text');
   const imageUrl = imageUrlField.value;
   const topText = topTextField.value;
   const bottomText = bottomTextField.value;
