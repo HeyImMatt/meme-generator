@@ -10,11 +10,16 @@ form.onsubmit = function (event) {
   const topText = topTextField.value;
   const bottomText = bottomTextField.value;
 
-  createSpicyMeme(imageUrl, topText, bottomText);
-
-  imageUrlField.value = '';
-  topTextField.value = '';
-  bottomTextField.value = '';
+  if (imageUrl.substring(0, 4) === 'http') {
+    createSpicyMeme(imageUrl, topText, bottomText);
+    imageUrlField.classList.remove('is-invalid');
+    imageUrlField.value = '';
+    topTextField.value = '';
+    bottomTextField.value = '';
+  } else {
+    alert('URL does not appear to be valid');
+    imageUrlField.classList.add('is-invalid');
+  }
 };
 
 function createSpicyMeme(url, topText, bottomText) {
