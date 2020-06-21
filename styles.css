@@ -1,5 +1,17 @@
 .meme {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   background-size: cover;
   height: 300px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  color: white;
+  -webkit-text-stroke: 1.5px black;
 }
+
+.top-text {
+  align-self: flex-start;
+  margin: 0px auto;
+}
+
