@@ -20,12 +20,15 @@ form.onsubmit = function (event) {
 function createSpicyMeme(url, topText, bottomText) {
   const meme = document.createElement('div');
   const topTextArea = document.createElement('span');
+  const bottomTextArea = document.createElement('span');
 
   meme.className = 'meme';
   meme.style.backgroundImage = `url(${url})`;
   topTextArea.className = 'top-text';
   topTextArea.innerText = topText;
+  bottomTextArea.className = 'bottom-text';
+  bottomTextArea.innerText = bottomText;
 
-  meme.append(topTextArea)
+  meme.append(topTextArea, bottomTextArea)
   generatedMemesDiv.append(meme);
 }
