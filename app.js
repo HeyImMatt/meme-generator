@@ -34,4 +34,15 @@ function createSpicyMeme(url, topText, bottomText) {
 
   meme.append(topTextArea, bottomTextArea)
   generatedMemesDiv.append(meme, deleteButton);
+
+  window.scrollTo(0, document.body.scrollHeight);
 }
+
+generatedMemesDiv.addEventListener('click', function(event) {
+  if (event.target.className === 'btn btn-danger') {
+    if (confirm('Are you sure you want to delete that spicy meme?')){
+      event.target.previousSibling.remove();
+      event.target.remove();
+    }
+  }
+})
