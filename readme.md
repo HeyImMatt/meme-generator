@@ -9,11 +9,14 @@
 
 The Meme Generator lets you create spicy memes for your enjoyment. Use the form fields to add an image url, top text, and bottom text, and click Generate to see your meme.
 
-You can view it here: https://heyimmatt.github.io/meme-generator
+You can use it here: https://heyimmatt.github.io/meme-generator
 
 **Created by: Matt McFarland**
 
 **Created on: 6-21-2020**
+
+Main Screen  
+![Main Screen](https://github.com/HeyImMatt/meme-generator/blob/master/meme-generator.gif)
 
 ## Technologies Used
 - JavaScript
