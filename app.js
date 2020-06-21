@@ -39,8 +39,8 @@ function createSpicyMeme(url, topText, bottomText) {
 }
 
 generatedMemesDiv.addEventListener('click', function(event) {
-  if (event.target.className === 'btn btn-danger') {
-    if (confirm('Are you sure you want to delete that spicy meme?')){
+  if (event.target.tagName === 'BUTTON') {
+    if (confirm('That meme looks fire. Are you sure you want to delete it?')){
       event.target.previousSibling.remove();
       event.target.remove();
     }
