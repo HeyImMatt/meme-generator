@@ -12,6 +12,7 @@
   flex-direction: column;
   align-content: center;
   background-size: cover;
+  background-position: center;
   height: 300px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2rem;
